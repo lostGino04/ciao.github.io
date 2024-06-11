@@ -2,6 +2,11 @@
 	<head>
 		<title>BARZELLETTE DER PUPONE</title>
 		<style>
+			@keyframes marquee {
+            			0% { transform: translateX(100%); }
+            			100% { transform: translateX(-100%); }
+        		}
+			
 			.arcobaleno {
     			width: 300px;
     			height: 300px;
@@ -21,9 +26,11 @@
 			<li>ROOMA ROOOMA ROOOOOOOMAAAA COOORE DE STA CITTAAAA</li>
     			<li>Ilary merda</li>
 		</ol>
-		<p style="animation: marquee 5s linear infinite; width: 100vw" class="arcobaleno">
-			DAJE ROMA LAZIO MERDA ILARY MERDA SO ER PUPONE VE FACCIO ER CUCCHIAIO DAJE ROMA DAJEEEE
-		</p>
+		<div style="overflow: hidden; width: 100vw;">
+        		<p class="arcobaleno">
+            			DAJE ROMA LAZIO MERDA ILARY MERDA SO ER PUPONE VE FACCIO ER CUCCHIAIO DAJE ROMA DAJEEEE
+        		</p>
+    		</div>
 		<br/>
 		<hr/>
 		<img src="erpupone.jpg" width=1000 height=500/>
